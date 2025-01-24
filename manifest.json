@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon Model Scraper",
+    "version": "1.0",
+    "description": "Scrapes the model/part number from Amazon product pages.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.amazon.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
